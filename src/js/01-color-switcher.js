@@ -15,7 +15,6 @@ const buttonStop = document.querySelector('button[data-stop]');
 const body = document.querySelector('body');
 const color = document.querySelector('.color');
 
-buttonStart.disabled = false;
 
 
 const background = function () {
