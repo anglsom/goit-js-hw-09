@@ -11,18 +11,16 @@ function getRandomHexColor() {
 
 const buttonStart = document.querySelector('button[data-start]');
 const buttonStop = document.querySelector('button[data-stop]');
-
 const body = document.querySelector('body');
-const color = document.querySelector('.color');
 
-
+let timer = null; 
 
 const background = function () {
   body.style.backgroundColor = getRandomHexColor();
   body.style.color = getRandomHexColor();
-  color.textContent = getRandomHexColor();
+  // color.textContent = getRandomHexColor();
 };
-let timer = null; 
+
 
 buttonStart.addEventListener('click', () => {
   timer = setInterval(background, 1000);
