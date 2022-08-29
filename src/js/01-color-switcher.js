@@ -22,6 +22,7 @@ const background = function () {
   body.style.color = getRandomHexColor();
   color.textContent = getRandomHexColor();
 };
+let timer = null; 
 
 buttonStart.addEventListener('click', () => {
   timer = setInterval(background, 1000);
